@@ -68,6 +68,8 @@ function TodoItem({ todo }) {
         </div>
         <div className={styles.todoActions}>
           <div
+            aria-label="a"
+            aria-labelledby="a"
             className={styles.icon}
             onClick={() => handleDelete()}
             onKeyDown={() => handleDelete()}
@@ -77,6 +79,8 @@ function TodoItem({ todo }) {
             <MdDelete />
           </div>
           <div
+            aria-label="a"
+            aria-labelledby="a"
             className={styles.icon}
             onClick={() => handleUpdate()}
             onKeyDown={() => handleUpdate()}
